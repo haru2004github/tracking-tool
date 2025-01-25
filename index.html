@@ -8,6 +8,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <style>
+      @keyframes bounce-up {
+    0%, 100% {
+      transform: translateY(0);
+
+    }
+    50% {
+      transform: translateY(-10px);
+
+
+    }
+  }
+
+  .custom-bounce {
+    animation: bounce-up 1s ease-in-out infinite;
+  }
        /* HTML: <div class="loader"></div> */
 .loader {
   width: 20px;
@@ -88,21 +103,21 @@
             <div class="bg-slate-700 rounded-full p-2 px-4 mt-3 text-sm flex justify-between items-center mx-4">
               <i class="fas fa-location"></i>
               <span>
-                လင်းနိုင် (180.231.23.78)
+                လင်းနိုင် (136.228.160.4)
               </span>
               <i class="fas fa-x"></i>
             </div>
             <div class="bg-slate-700 rounded-full p-2 px-4 mt-3 text-sm flex justify-between items-center mx-4">
               <i class="fas fa-location"></i>
               <span>
-                သီဟ (180.231.23.78)
+                သီဟ (65.18.126.13)
               </span>
               <i class="fas fa-x"></i>
             </div>
             <div class="bg-slate-700 rounded-full p-2 px-4 mt-3 text-sm flex justify-between items-center mx-4">
               <i class="fas fa-location"></i>
               <span>
-                မြတ်နိုး  (180.231.23.78)
+                မြတ်နိုး  (117.18.231.2)
               </span>
               <i class="fas fa-x"></i>
             </div>
@@ -122,48 +137,51 @@
 
 
 
-        <div class="fixed top-10 md:top-40 right-10 md:right-96 z-50 rotate-180 scale-75 flex flex-col items-center">
-            <div class="bg-cyan-500 rotate-45 w-8 h-8 mx-auto z-10"></div>
+        <div class="fixed top-10 md:top-40 right-10 md:right-96 z-50  custom-bounce">
+            <div class="flex flex-col items-center rotate-180 scale-75">
+              <div class="bg-cyan-500 rotate-45 w-8 h-8 mx-auto z-10"></div>
 
             <div class="-mt-6 animate p-2 z-20   bg-cyan-500 flex justify-center text-white text-3xl items-center w-20 h-20 md:w-24 overflow-hidden  md:h-24 rounded-full z-50 md:scale-[1.3]  opacity-90">
                 <div class="rounded-full w-full h-full overflow-hidden ">
                  <img class="z-50 rotate-180" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSscR9OFAOfOKKbUx1XPkSzQfFT4BD1iINezA&s" alt="">
                 </div>
              </div>
-             <h1 class="text-center rotate-180 mt-2 text-lg font-bold text-cyan-600">
+             <h1 class="text-center rotate-180 mt-2 text-lg font-bold text-cyan-600  bg-white/40 px-2 py-1 rounded-lg backdrop-blur-md">
                 သီဟ
              </h1>
+            </div>
         </div>
 
-        <div class="fixed top-[20%] md:top-[50%] right-[70%] md:right-[60%] scale-75 rotate-180 flex flex-col items-center">
+        <div class="fixed top-[20%] md:top-[50%] right-[70%] md:right-[60%] z-50  custom-bounce">
+          <div class="flex flex-col items-center rotate-180 scale-75">
             <div class="bg-cyan-500 rotate-45 w-8 h-8 mx-auto z-10"></div>
 
-            <div class="-mt-6 animate p-2 z-20  bg-cyan-500 flex justify-center text-white text-3xl items-center w-20 h-20 md:w-24 overflow-hidden  md:h-24 rounded-full z-50 md:scale-[1.3] opacity-90">
-                <div class="rounded-full w-full h-full overflow-hidden ">
-                 <img class="z-50 rotate-180" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08ql5ByHWRFO0wiJ9y8UFjll_yZE2dbaFFQ&s" alt="">
-                </div>
-             </div>
-             <h1 class="text-center rotate-180 mt-2 text-lg font-bold text-cyan-600">
-                လင်းနိုင်
-             </h1>
+          <div class="-mt-6 animate p-2 z-20   bg-cyan-500 flex justify-center text-white text-3xl items-center w-20 h-20 md:w-24 overflow-hidden  md:h-24 rounded-full z-50 md:scale-[1.3]  opacity-90">
+              <div class="rounded-full w-full h-full overflow-hidden ">
+                <img class="z-50 rotate-180" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT08ql5ByHWRFO0wiJ9y8UFjll_yZE2dbaFFQ&s" alt="">
+              </div>
+           </div>
+           <h1 class="text-center rotate-180 mt-2 text-lg font-bold text-cyan-600  bg-white/40 px-2 py-1 rounded-lg backdrop-blur-md">
+            လင်းနိုင်
+           </h1>
+          </div>
+      </div>
+
+
+      <div class="fixed bottom-[50%] md:bottom-[20%] right-[15%] z-50   custom-bounce">
+        <div class="flex flex-col items-center rotate-180 scale-75">
+          <div class="bg-cyan-500 rotate-45 w-8 h-8 mx-auto z-10"></div>
+
+        <div class="-mt-6 animate p-2 z-20   bg-cyan-500 flex justify-center text-white text-3xl items-center w-20 h-20 md:w-24 overflow-hidden  md:h-24 rounded-full z-50 md:scale-[1.3]  opacity-90">
+            <div class="rounded-full w-full h-full overflow-hidden ">
+              <img class="z-50 rotate-180" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr60Yy2EH-e9l_It-6jbLv-tyKeB7rp5HuHQ&s" alt="">
+            </div>
+         </div>
+         <h1 class="text-center rotate-180 mt-2 text-lg font-bold text-cyan-600 bg-white/40 px-2 py-1 rounded-lg backdrop-blur-md ">
+          မြတ်နိုး
+         </h1>
         </div>
-
-
-
-
-        <div class=" fixed bottom-[50%] md:bottom-[20%] right-[15%] z-50 scale-75 opacity-90 rotate-180 flex flex-col items-center">
-            <div class="bg-cyan-500 rotate-45 w-8 h-8 mx-auto z-10"></div>
-
-            <div class="-mt-6 animate p-2 z-20  bg-cyan-500 flex justify-center text-white text-3xl items-center w-20 h-20 md:w-24 overflow-hidden  md:h-24 rounded-full z-50 md:scale-[1.3] opacity-90">
-                <div class="rounded-full w-full h-full overflow-hidden ">
-                 <img class="z-50 rotate-180" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr60Yy2EH-e9l_It-6jbLv-tyKeB7rp5HuHQ&s" alt="">
-                </div>
-             </div>
-             <h1 class="text-center rotate-180 mt-2 text-lg font-bold text-cyan-600">
-                 မြတ်နိုး
-             </h1>
-        </div>
-
+    </div>
 
         <!-- <iframe class="bg-green-500 w-20 h-20 rounded-full fixed top-[50%] right-[60%] z-50 " src="https://lottie.host/embed/85509ae9-4788-4f4c-a632-e0aa1f9893fb/02q7hW4W7g.lottie"></iframe> -->
 
